@@ -1,0 +1,121 @@
+:root {
+  color-scheme: light;
+  font-family: system-ui, "Microsoft YaHei", sans-serif;
+  color: #232c25;
+  background: #f4f1e7;
+  line-height: 1.6;
+}
+
+* { box-sizing: border-box; }
+
+body { margin: 0; }
+
+main {
+  width: min(100% - 2rem, 46rem);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 5vw, 4rem) 0 2rem;
+}
+
+.masthead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .25rem 1rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid #c6c9bb;
+}
+
+.eyebrow {
+  margin: 0;
+  color: #305442;
+  font-weight: 700;
+  font-size: .88rem;
+}
+
+a { color: #24533c; text-underline-offset: .19em; }
+
+.language {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  font-size: .9rem;
+  font-weight: 650;
+}
+
+h1 {
+  margin: 1.35rem 0 .7rem;
+  font-family: Georgia, "Microsoft YaHei", serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
+
+.intro {
+  margin: 0 0 1.6rem;
+  max-width: 62ch;
+  font-size: 1.075rem;
+}
+
+.check {
+  padding: clamp(.85rem, 3vw, 1.45rem);
+  border: 1px solid #b8c2af;
+  border-radius: 1rem;
+  background: #fffdf7;
+}
+
+h2 {
+  margin: 0 0 .85rem;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+details {
+  border: 1px solid #becbbd;
+  border-radius: .6rem;
+  background: #f0f5ed;
+}
+
+details + details { margin-top: .65rem; }
+
+summary {
+  min-height: 44px;
+  padding: .65rem .8rem;
+  border-radius: .55rem;
+  font-weight: 700;
+  color: #214535;
+  cursor: pointer;
+}
+
+summary:hover, details[open] > summary { background: #dce9d8; }
+
+:focus-visible { outline: 3px solid #386345; outline-offset: 3px; }
+
+.answer { padding: .8rem; }
+
+.answer p { margin: 0; }
+
+.answer p + p { margin-top: .6rem; }
+
+.example {
+  padding: .45rem .7rem;
+  border-inline-start: 3px solid #69916a;
+  background: #fbfcf7;
+}
+
+footer {
+  margin-top: 1.2rem;
+  font-size: .88rem;
+  color: #434d43;
+}
+
+footer p { margin: 0 0 .2rem; }
+
+footer ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .2rem 1.3rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
